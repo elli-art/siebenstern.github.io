@@ -41,8 +41,7 @@ body {
 @font-face {
     font-family: MarkMedium;
     font-display: swap;
-    src: url(/fonts/medium/bca028ce-c27d-4e7d-aa28-f173d521ad14.woff2) format('woff2'),
-        url(/fonts/medium/37554929-783d-48b4-9346-54af9bdaa5c7.woff) format('woff'),
+    src: url(/fonts/medium/37554929-783d-48b4-9346-54af9bdaa5c7.woff) format('woff'),
         url(/fonts/medium/fbdcf9c3-5ae6-4d9a-a599-3764f7c806be.eot) format('eot');
     }
 
