@@ -119,7 +119,10 @@ switch (true)  {
        $('#square02').css("fill", "#008873")
        break;
 
-        default: einfaerbenItems.setAttribute('style', 'color:#4be2C9'); //mint
+        default: einfaerbenItems.setAttribute('style', 'color:#ff4655'); //rot
+        einfaerbenTexte.forEach(elem => elem.setAttribute('style', 'color:#ff4655'));
+       $('#square01').css("fill", "#ff4655")
+       $('#square02').css("fill", "#ff4655")
     }
 } else {console.log('irgendetwas ist schiefgelaufen')}
 
