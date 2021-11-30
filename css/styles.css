@@ -151,9 +151,14 @@ a:hover {
       /*width: 100%;
       overflow: auto;*/    
      }
-  /*    .my-upper-navbar .schriftzugblock{
-       width: 60%;
-     } */
+  .my-upper-navbar .schriftzugblock{
+       width: 100%;
+     } /*    */
+
+  .schriftzugblock {
+    position: absolute;
+    bottom: 0;
+  }
 
 }
 
@@ -180,6 +185,10 @@ a:hover {
   .my-upper-navbar .schriftzugblock{
     width: 100%;
   } /* */
+  .schriftzugblock {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .page-section {
