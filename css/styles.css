@@ -541,6 +541,11 @@ h3 {
       top: 15px;
       right: 35px;
     } 
+
+    .schriftzugblock {
+      position: sticky;
+      bottom: 0;
+    }
     
   }
 
