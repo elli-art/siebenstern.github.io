@@ -152,15 +152,12 @@ a:hover {
       overflow: auto;*/    
      }
 
-    .overlay-content.active { 
-      overflow: auto;
-    }
   .my-upper-navbar .schriftzugblock{
        width: 100%;
      } /*    */
 
   .schriftzugblock {
-    position: absolute;
+    position: sticky;
     bottom: 0;
   }
 
@@ -192,7 +189,7 @@ a:hover {
     width: 100%;
   } /* */
   .schriftzugblock {
-    position: absolute;
+    position: sticky;
     bottom: 0;
   }
 }
