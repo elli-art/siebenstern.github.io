@@ -151,6 +151,10 @@ a:hover {
       /*width: 100%;
       overflow: auto;*/    
      }
+
+    .overlay-content.active { 
+      overflow: auto;
+    }
   .my-upper-navbar .schriftzugblock{
        width: 100%;
      } /*    */
@@ -159,6 +163,8 @@ a:hover {
     position: absolute;
     bottom: 0;
   }
+
+
 
 }
 
