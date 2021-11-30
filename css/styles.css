@@ -542,7 +542,7 @@ h3 {
       right: 35px;
     } 
 
-    #myNav.active .schriftzugblock {
+   .schriftzugblock {
       position: -webkit-sticky;
       position: sticky;
       bottom: 0;
