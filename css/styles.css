@@ -543,7 +543,7 @@ h3 {
     } 
 
    .schriftzugblock {
-      position: absolute;
+      position: sticky;
       bottom: 0;
     }
     
