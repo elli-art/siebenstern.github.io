@@ -546,6 +546,7 @@ h3 {
       position: -webkit-sticky;
       position: sticky;
       bottom: 0;
+      overflow-y: hidden; 
     }
     
   }
