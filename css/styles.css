@@ -544,9 +544,8 @@ h3 {
 
    .schriftzugblock {
       position: -webkit-sticky;
-      position: sticky;
+      position: absolute;
       bottom: 0;
-      overflow-y: hidden; 
     }
     
   }
