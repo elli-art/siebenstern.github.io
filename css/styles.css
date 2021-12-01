@@ -534,22 +534,36 @@ h3 {
   }
 
   #myNav {
-    height: 80px;
+    height: 90px;
   }
 
-   .overlay-content.active {
+  #myNav.active {
     overflow-y: visible; 
    }
 
     .overlay a {
         font-size: 20px; 
     }
+
+    .overlay a:last-of-type{
+      margin-bottom: 20px;
+    }
+    
     .overlay.closebtn {
       font-size: 40px;
       top: 15px;
       right: 35px;
     } 
+/**/ 
+    .schriftzugblock {
+      display: none;
+    } 
 
+
+    .overlay-content.active {
+      height: auto;
+      margin-bottom: 0;
+    }
    
   }
 
