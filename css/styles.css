@@ -103,6 +103,7 @@ a {
     padding: 0;
 }
 
+
 a:hover {
     color: #FF4655;
 }
@@ -156,7 +157,7 @@ a:hover {
        width: 100%;
      } /*    */
 
-  .schriftzugblock {
+  #myNav .schriftzugblock {
     position: sticky;
     bottom: 0;
   }
@@ -167,6 +168,10 @@ a:hover {
 
   .page-section h1{
     margin-top: 2rem;
+  }
+
+  .text-rot {
+    padding-top: 2.5rem;
   }
 
 }
@@ -207,6 +212,9 @@ a:hover {
     margin-top: 2rem;
   }
 
+  .text-rot {
+    padding-top: 2.5rem;
+  }
 
 }
 
@@ -606,6 +614,10 @@ h3 {
 
     .page-section h1{
       margin-top: 3.7rem;
+    }
+
+    .text-rot {
+      padding-top: 0;
     }
    
   }
