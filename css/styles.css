@@ -529,6 +529,14 @@ h3 {
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
   @media screen and (max-height: 450px) {
 
+  html, body {
+    height: 100%;
+  }
+
+  #myNav {
+    height: 80px;
+  }
+
    .overlay-content.active {
     overflow-y: visible; 
    }
