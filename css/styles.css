@@ -652,7 +652,7 @@ h3 {
 
   @media screen and (max-width: 545px) {
    .text-abstand-rand, .kleiner-text {
-       padding: 30px 0;
+       padding: 30px;
    }
 
 }
