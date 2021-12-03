@@ -614,7 +614,7 @@ h3 {
     }
 
     .page-section h1{
-      margin-top: 1.7rem;
+      margin-top: 1.7rem !important;
     }
 
     .text-rot {
