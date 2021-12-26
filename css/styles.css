@@ -1495,6 +1495,10 @@ footer a{
     padding: 0 !important;
   }
 
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
 .p-3 {
       padding-bottom: 3rem;
   }
