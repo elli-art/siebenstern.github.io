@@ -225,6 +225,10 @@ a:hover {
     border-bottom: 5px solid black;
 }
 
+#section-impressum{
+  border-bottom: 5px solid black;
+}
+
 
 .page-section:nth-of-type(1) {
     border-bottom: none;
