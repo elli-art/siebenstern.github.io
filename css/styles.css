@@ -145,6 +145,10 @@ a:hover {
         font-size: 20px;
     }
 
+    .kleiner-text{
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
 
     #myNav { 
       margin: 0; 
@@ -189,6 +193,11 @@ a:hover {
 
   h3 {
     font-size: 0.8rem;
+  }
+
+  .kleiner-text{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   #myNav {
