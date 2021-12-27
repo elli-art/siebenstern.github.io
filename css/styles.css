@@ -147,7 +147,10 @@ a:hover {
 
     .kleiner-text{
       padding-top: 0 !important;
-      padding-bottom: 0 !important;
+    }
+
+    .link-break {
+      word-wrap: break-word;
     }
 
     #myNav { 
@@ -197,7 +200,6 @@ a:hover {
 
   .kleiner-text{
     padding-top: 0 !important;
-    padding-bottom: 0 !important;
   }
 
   #myNav {
@@ -256,6 +258,11 @@ h1 {
 h3 {
     font-size: 1.25rem;
     margin-bottom: 0.3rem;
+}
+
+  
+.impressum h3:first-of-type{
+  margin-top: 0 !important;
 }
 
 .page-section h1{
