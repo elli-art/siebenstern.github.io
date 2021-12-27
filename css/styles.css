@@ -50,7 +50,7 @@ html {
 body {
         font-family: MarkMedium, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
         width: 100%;
-        min-width: 320px; /* */
+        min-width: 350px; /* */
         height: auto;
         margin: auto;
         hyphens: auto;
