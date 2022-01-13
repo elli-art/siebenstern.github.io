@@ -181,6 +181,10 @@ a:hover {
     padding-top: 2.5rem;
   }
 
+  .text-grey {
+    padding-top: 2.5rem;
+  }
+
 }
 
 @media screen and(min-width: 360px) {
@@ -225,6 +229,10 @@ a:hover {
   }
 
   .text-rot {
+    padding-top: 2.5rem;
+  }
+
+  .text-grey{
     padding-top: 2.5rem;
   }
 
@@ -274,6 +282,11 @@ h3 {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+.text-grey {
+  color: #85888c;
+
+}
 
 
 #myNav {
@@ -638,6 +651,10 @@ h3 {
     }
 
     .text-rot {
+      padding-top: 0;
+    }
+
+    .text-grey {
       padding-top: 0;
     }
    
