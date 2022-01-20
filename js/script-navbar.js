@@ -289,8 +289,10 @@ const vieportCheck = function() {
 
 body.addEventListener('wheel', vieportCheck);
 body.addEventListener('scroll', vieportCheck);
-body.addEventListener('touchmove', vieportCheck);
 
+body.addEventListener('touchstart', vieportCheck);
+body.addEventListener('touchmove', vieportCheck);
+body.addEventListener('touchend', vieportCheck);
 
 
  
