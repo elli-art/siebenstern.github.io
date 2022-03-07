@@ -218,8 +218,6 @@ a:hover {
     height: 35px !important;
   }
 
-
-
   
 }
 
@@ -267,6 +265,31 @@ a:hover {
 
   .text-grey{
     padding-top: 2.5rem;
+  }
+
+  
+  #zum_stern {
+    height: 35px !important;
+  }
+  
+  #zum_about {
+    height: 85px !important;
+  }
+  
+  #zum_portfolio {
+    height: 135px !important;
+  }
+
+  #zum_services {
+    height: 35px !important;
+  }
+  
+  #zum_network {
+    height: 35px !important;
+  }
+  
+  #zum_contact {
+    height: 35px !important;
   }
 
 }
