@@ -16,26 +16,8 @@ const clearPfad = function () {
   logoIcon.addEventListener("click", function() {
     $('.pfad').hide();
   });
-  /*document.addEventListener("wheel", function() {
-    let myPfad = document.querySelector(".pfad");
-    myPfad.remove();
-  });  */
 };
  /**/ 
-
-
-/*
-const allSectionArray = [];
-
-allSectionArray.push(star);
-allSectionArray.push(about);
-allSectionArray.push(services);
-allSectionArray.push(portfolio);
-allSectionArray.push(contact);
-allSectionArray.push(network);
-
-console.log(allSectionArray);
-   */
 
 
 /*
@@ -499,16 +481,3 @@ navLinks.addEventListener("click", linkVisible);
 // -------------------------------------------------------------------------------------------
 
 
-// DOM - Manipulation
-
-// Konstanten
-/* 
-const navPfad = document.querySelector(".schriftzugblock");
-const node = document.createElement("h5");
-//const textNode = document.createTextNode(".mein Pfad");
-navPfad.appendChild(node);
-node.classList.add("text-center"); 
-node.innerHTML = ("." + name);
-
-
-*/
