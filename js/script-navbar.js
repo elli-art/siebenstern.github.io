@@ -6,7 +6,6 @@ const navButton = document.querySelector(".first-button");
 const navMenu = document.querySelector("#myNav");
 const navLinkContainer = document.querySelector(".overlay-content");
 const navLinks = document.querySelectorAll(".overlay-link");
-//console.log(navLinks);
 const animIcon = document.querySelector(".animated-icon1");
 const logoIcon = document.querySelector(".navbar-brand");
 
