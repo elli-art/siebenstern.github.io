@@ -141,6 +141,10 @@ a:hover {
       padding-top: 3rem !important;
     }
 
+    .hintergrundsfarbe {
+      padding-top: 0 !important;
+    }
+
     .page-section h1 {
       margin-top: 0 !important;
     }
