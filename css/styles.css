@@ -137,12 +137,8 @@ a:hover {
         overflow-x: hidden;
     }
 
-    .hintergrundsfarbe{
-      padding-top: 0 !important;
-    }
-
-    .page-section h1{
-      margin-top: 0 !important;
+    .page-section {
+      padding-top: 3rem !important;
     }
 
     h1 {
@@ -605,7 +601,7 @@ h3 {
   }
   
   .overlay-content.active {
-      height: 100%;
+      height: 100%; /* */
       visibility: visible;
       margin-top: 30px;
       margin-bottom: 0;
@@ -615,11 +611,12 @@ h3 {
 
 
   /* The navigation links inside the overlay */
+
   .overlay-link {
-    /*padding-top: 8px;  */
-    padding-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
     text-decoration: none;
-    /* */
+    
     color: black;
     display: block; /* Display block instead of inline */
 
@@ -670,6 +667,12 @@ h3 {
       top: 15px;
       right: 35px;
     } 
+
+    .overlay-link {
+      margin-bottom: 4px !important;
+      size: 20px;
+    }
+  
 /**/ 
     .schriftzugblock {
       background-color: #ffff;
@@ -696,17 +699,25 @@ h3 {
     }
 
     .overlay-content.active {
+     
       height: auto;
       margin-bottom: 0;
     }
 
     .page-section {
-      padding-top: 2rem;
+      padding-top: 1rem;
     }
-/* 
+
+    .page-section:first-of-type {
+      min-height: auto !important;
+      padding-top: 0 !important;
+      margin-top: 20vh !important;
+      padding-bottom: 0 !important;
+    }
+ /**/
     .page-section h1{
       margin-top: 1rem !important;
-    } */
+    } 
 
     .text-rot {
       padding-top: 0;
@@ -715,10 +726,38 @@ h3 {
     .text-grey {
       padding-top: 0;
     }
+
+    #zum_stern {
+      height: 0 !important;
+    }
+    
+    #zum_about {
+      height: 10px !important;
+    }
+    
+    #zum_portfolio {
+      height: 3rem !important;
+    }
+  
+    #zum_services {
+      height: 0 !important;
+    }
+    
+    #zum_network {
+      height: 0 !important;
+    }
+    
+    #zum_contact {
+      height: 0 !important;
+    }
+
+    section div .p-3{
+      padding-bottom: 0 !important;
+    }
    
   }
 
-   /*-------------------header ----------------------------------*/
+/*-------------------header ----------------------------------*/
 
   .hintergrundsfarbe {
       /* background-color: #FF4655; */
