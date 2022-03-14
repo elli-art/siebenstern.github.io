@@ -654,9 +654,9 @@ h3 {
     overflow-y: visible; 
    }
 
-    .overlay a {
+    /* .overlay a {
         font-size: 20px; 
-    }
+    } */
 
     .overlay a:last-of-type{
       margin-bottom: 20px;
@@ -667,13 +667,16 @@ h3 {
       top: 15px;
       right: 35px;
     } 
-
+/**/
     .overlay-link {
       margin-bottom: 4px !important;
-      size: 20px;
+    }
+
+    .overlay-link h1 {
+      font-size: 1.8rem !important;
     }
   
-/**/ 
+ 
     .schriftzugblock {
       background-color: #ffff;
       display: inline ;
