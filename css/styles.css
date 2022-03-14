@@ -721,7 +721,6 @@ h3 {
 
     .page-section:first-of-type {
       min-height: auto !important;
-      padding-top: 4rem !important;
       margin-top: 20vh !important;
       padding-bottom: 0 !important;
     }
