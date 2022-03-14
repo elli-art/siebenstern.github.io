@@ -141,7 +141,6 @@ const getViewPort = function () {
 };
 };
 */
-//document.addEventListener("wheel", getViewPort());
 
 //document.addEventListener('wheel', getViewPort);
 //document.addEventListener('scroll', getViewPort);
@@ -182,7 +181,7 @@ const vieportCheck = function() {
       case "sternenwahl7":
     // Position Design your star - Check
     var pos1 = elem1.getBoundingClientRect();
-    if(pos1.top <= 100 || pos1.bottom <= 110 ) {
+    if(pos1.top <= 50 || pos1.bottom <= 110 ) {
       $('.pfad').show().html("<p>Dein Stern</p>");
       console.log('Star is visible in screen');
     }
@@ -194,7 +193,7 @@ const vieportCheck = function() {
     case "about": 
     // Position about - Check
     var pos2 = elem2.getBoundingClientRect();
-    if(pos2.top <= 110 || pos2.bottom <= 110 ) {
+    if(pos2.top <= 50 || pos2.bottom <= 110 ) {
       $('.pfad').show().html("<p>Zu mir</p>");
       console.log('About is visible in screen');
     }
@@ -206,7 +205,7 @@ const vieportCheck = function() {
     case "services":
     // Position Services - Check
     var pos3 = elem3.getBoundingClientRect();
-    if(pos3.top <= 110 || pos3.bottom <= 110 ) {
+    if(pos3.top <= 50 || pos3.bottom <= 110 ) {
       $('.pfad').show().html("<p>Von mir</p>")
       console.log('Services is visible in screen');
     }
@@ -218,7 +217,7 @@ const vieportCheck = function() {
     case "portfolio": 
     // Position Portfolio - Check
     var pos4 = elem4.getBoundingClientRect();
-    if(pos4.top <= 110 || pos4.bottom <= 110 ) {
+    if(pos4.top <= 50 || pos4.bottom <= 110 ) {
       $('.pfad').show().html("<p>Für Dich</p>");
       console.log('Porfolio is visible in screen');
     }
@@ -230,7 +229,7 @@ const vieportCheck = function() {
     case "network":
     // Position Kontakt - Check
       var pos5 = elem5.getBoundingClientRect();
-      if(pos5.top <= 110 || pos5.bottom <= 110 ) {
+      if(pos5.top <= 50 || pos5.bottom <= 110 ) {
         $('.pfad').show().html("<p>Mit mir</p>");
         console.log('Kontakt is visible in screen');
       }
@@ -242,7 +241,7 @@ const vieportCheck = function() {
     case "contact":
     // Position Netzwerk - Check
       var pos6 = elem6.getBoundingClientRect();
-      if(pos6.top <= 110 || pos6.bottom <= 110 ) {
+      if(pos6.top <= 50 || pos6.bottom <= 110 ) {
         $('.pfad').show().html("<p>An mich</p>");
         console.log('Netzwerk is visible in screen');
       }
@@ -328,6 +327,8 @@ function iconAnimation () {
 }; */
 
 function mobileMenu() {
+
+  $('.outer-link').show();
     navMenu.classList.toggle("active");
     navLinkContainer.classList.toggle("active");
     
@@ -341,10 +342,10 @@ function mobileMenu() {
 function waehleZiel(e) {
   let ziel = e.target;
   console.log(ziel);
-  //let eventTag = ziel.closest('div > *');
+  //ziel.closest('div > a');
   let name = ziel.innerHTML;
   //eventTag.textContent = name;
-  //console.log(name);
+  console.log(name);
 
   //-------------------------------------------------------------------
   // DOM - Manipulation
@@ -352,8 +353,8 @@ function waehleZiel(e) {
   /**/ 
 
   
-  const navPfad = document.querySelector(".schriftzugblock");
-  const navBar01 = document.querySelector(".navbar");
+  //const navPfad = document.querySelector(".schriftzugblock");
+  //const navBar01 = document.querySelector(".navbar");
   //const node = document.createElement("h3");
   const node = document.querySelector(".pfad")
   //node.classList.add("pfad")
@@ -366,16 +367,28 @@ function waehleZiel(e) {
   //node.classList.add("text-center"); 
   $('.pfad').show();
   node.innerHTML = name;
-  
-  ziel.addEventListener("click", function(){
-    animIcon.classList.remove("open"); /* */
+  /*ziel.closest(".outer-link");*/ 
+
+   
+    ziel.addEventListener("click", function(){
+    animIcon.classList.remove("open"); 
     navMenu.classList.remove("active");
     navLinkContainer.classList.remove("active");
+    $('.outer-link').hide();
+    
 });  
   
+ 
 
+/* 
+    console.log(navMenu.classList);
+    let klassenNav = navMenu.classList.toString();
+    console.log(klassenNav);
+    if (klassenNav.includes("active"))
+    {$('.overlay-link').show();}
+    else {$('.overlay-link').hide();}
 
-
+ */
 };
 
 
@@ -385,25 +398,27 @@ function init() {
 
   clearPfad();
   hamburgerAnimation();
-  
+
   navButton.addEventListener("click", mobileMenu);
+  
 /* navButton.addEventListener("click", linkVisible);*/  
  // console.log(navLinks);
 
-  navButton.addEventListener("click", function() {
+ // navButton.addEventListener("click", function() {
   /*  if (navMenu.classList.contains("active")) {
       console.log(navMenu.classList.length);
   } */
 
-    if (navLinkContainer.addEventListener("click", waehleZiel, true)) {
-    navLinks.addEventListener("click", function(){
+  if (navLinkContainer.addEventListener("click", waehleZiel, true)) {
+        //navLinks.addEventListener("click", function(){
         // animIcon.classList.add("open");
         navMenu.classList.remove("active");
         navLinkContainer.classList.remove("active");
-        //node.classList.remove("active");
-      }) 
-    
+        $('.overlay-content').hide();
+      //}) 
     } 
+
+   
 /*  
     for(let i=0; i<navLinks.length; i++) 
       navLinks[i].addEventListener("click", function(){
@@ -411,13 +426,15 @@ function init() {
         navMenu.classList.remove("active");
         navLinkContainer.classList.remove("active");
         
-      })    */
+      })  */ 
   
-     else { //animIcon.classList.remove("open");
+     else { 
+            //navLinkContainer.classList.remove("active");
       console.log("nix da")
-    };
-    
-  });
+    }; 
+
+  //});
+
 
 
 }
