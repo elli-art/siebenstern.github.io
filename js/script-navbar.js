@@ -178,12 +178,17 @@ const vieportCheck = function() {
     console.log(state);
 
     switch(state){
+ 
       case "sternenwahl7":
     // Position Design your star - Check
     var pos1 = elem1.getBoundingClientRect();
-    if(pos1.top <= 100 || pos1.bottom <= 500 ) {
+    if(pos1.top <= 300 || pos1.bottom <= 500 ) {
       $('.pfad').show().html("<p>Dein Stern</p>");
       console.log('Star is visible in screen');
+    }
+    if(pos1.top >= 500 ) {
+      $('.pfad').hide();
+      console.log('landingpage');
     }
     else {
       console.log('Star is not visible!');
@@ -193,7 +198,7 @@ const vieportCheck = function() {
     case "about": 
     // Position about - Check
     var pos2 = elem2.getBoundingClientRect();
-    if(pos2.top <= 100 || pos2.bottom <= 500 ) {
+    if(pos2.top <= 300 || pos2.bottom <= 500 ) {
       $('.pfad').show().html("<p>Zu mir</p>");
       console.log('About is visible in screen');
     }
@@ -205,7 +210,7 @@ const vieportCheck = function() {
     case "services":
     // Position Services - Check
     var pos3 = elem3.getBoundingClientRect();
-    if(pos3.top <= 100 || pos3.bottom <= 500 ) {
+    if(pos3.top <= 300 || pos3.bottom <= 500 ) {
       $('.pfad').show().html("<p>Von mir</p>")
       console.log('Services is visible in screen');
     }
@@ -217,7 +222,7 @@ const vieportCheck = function() {
     case "portfolio": 
     // Position Portfolio - Check
     var pos4 = elem4.getBoundingClientRect();
-    if(pos4.top <= 100 || pos4.bottom <= 500 ) {
+    if(pos4.top <= 300 || pos4.bottom <= 500 ) {
       $('.pfad').show().html("<p>Für Dich</p>");
       console.log('Porfolio is visible in screen');
     }
@@ -229,7 +234,7 @@ const vieportCheck = function() {
     case "network":
     // Position Kontakt - Check
       var pos5 = elem5.getBoundingClientRect();
-      if(pos5.top <= 100 || pos5.bottom <= 500 ) {
+      if(pos5.top <= 300 || pos5.bottom <= 500 ) {
         $('.pfad').show().html("<p>Mit mir</p>");
         console.log('Kontakt is visible in screen');
       }
@@ -241,7 +246,7 @@ const vieportCheck = function() {
     case "contact":
     // Position Netzwerk - Check
       var pos6 = elem6.getBoundingClientRect();
-      if(pos6.top <= 100 || pos6.bottom <= 500 ) {
+      if(pos6.top <= 300 || pos6.bottom <= 500 ) {
         $('.pfad').show().html("<p>An mich</p>");
         console.log('Netzwerk is visible in screen');
       }
@@ -250,6 +255,8 @@ const vieportCheck = function() {
       };
 
     break;
+
+
     default:
     console.log('Sorry, we are out of ' + state + '.')
       };
