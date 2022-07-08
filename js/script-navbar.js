@@ -150,8 +150,8 @@ let mySection = document.getElementsByTagName("section");
 
 let star = document.querySelector("#sternenwahl7");
 let about = document.querySelector("#about");
-let services = document.querySelector("#services");
 let portfolio = document.querySelector("#portfolio");
+let services = document.querySelector("#services");
 let network = document.querySelector("#network");
 let contact = document.querySelector("#contact");
 
@@ -159,8 +159,8 @@ const allSectionArray = [];
 
 allSectionArray.push(star);
 allSectionArray.push(about);
-allSectionArray.push(services);
 allSectionArray.push(portfolio);
+allSectionArray.push(services);
 allSectionArray.push(network);
 allSectionArray.push(contact);
 
@@ -206,28 +206,28 @@ const vieportCheck = function() {
       console.log('About is not visible!');
     };
     break;
-    
-    case "services":
-    // Position Services - Check
-    var pos3 = elem3.getBoundingClientRect();
-    if(pos3.top <= 300 || pos3.bottom <= 500 ) {
-      $('.pfad').show().html("<p>Für dich</p>")
-      console.log('Services is visible in screen');
-    }
-    else {
-      console.log('Services is not visible!')
-    };
-    break;
-  
+
     case "portfolio": 
     // Position Portfolio - Check
-    var pos4 = elem4.getBoundingClientRect();
-    if(pos4.top <= 300 || pos4.bottom <= 500 ) {
+    var pos3 = elem3.getBoundingClientRect();
+    if(pos3.top <= 300 || pos3.bottom <= 500 ) {
       $('.pfad').show().html("<p>Von mir</p>");
       console.log('Porfolio is visible in screen');
     }
     else {
       console.log('Portfolio is not visible!')
+    };
+    break;
+    
+    case "services":
+    // Position Services - Check
+    var pos4 = elem4.getBoundingClientRect();
+    if(pos4.top <= 300 || pos4.bottom <= 500 ) {
+      $('.pfad').show().html("<p>Für dich</p>")
+      console.log('Services is visible in screen');
+    }
+    else {
+      console.log('Services is not visible!')
     };
     break;
   
@@ -265,7 +265,7 @@ const vieportCheck = function() {
     
   
 
-    isInViewport(star, about, services, portfolio, network, contact)
+    isInViewport(star, about, portfolio, services, network, contact)
     
     
 
