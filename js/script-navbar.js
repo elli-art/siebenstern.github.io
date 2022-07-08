@@ -211,7 +211,7 @@ const vieportCheck = function() {
     // Position Services - Check
     var pos3 = elem3.getBoundingClientRect();
     if(pos3.top <= 300 || pos3.bottom <= 500 ) {
-      $('.pfad').show().html("<p>Von mir</p>")
+      $('.pfad').show().html("<p>Für dich</p>")
       console.log('Services is visible in screen');
     }
     else {
@@ -223,7 +223,7 @@ const vieportCheck = function() {
     // Position Portfolio - Check
     var pos4 = elem4.getBoundingClientRect();
     if(pos4.top <= 300 || pos4.bottom <= 500 ) {
-      $('.pfad').show().html("<p>Für Dich</p>");
+      $('.pfad').show().html("<p>Von mir</p>");
       console.log('Porfolio is visible in screen');
     }
     else {
