@@ -1725,7 +1725,7 @@ footer a{
         text-align: center;
         opacity: 0;
         color: #fff;
-        background: rgba(114, 114, 114, 0.85);
+        background: rgba(255, 255, 255, 0.85);
         transition: opacity 0.25s ease;
         text-align: center;
       }
