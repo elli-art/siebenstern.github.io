@@ -633,7 +633,7 @@ h3 {
 
   /* When you mouse over the navigation links, change their color */
   .overlay-link:hover {
-    color: #FF4655;
+    color: #fff;
     transition: 0.3s ease-in; /* Transition effects on hover/colorchange*/
     
   }
