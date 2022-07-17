@@ -182,7 +182,7 @@ const vieportCheck = function() {
       case "sternenwahl7":
     // Position Design your star - Check
     var pos1 = elem1.getBoundingClientRect();
-    if(pos1.top <= 300 || pos1.bottom <= 500 ) {
+    if(pos1.top <= 280 || pos1.bottom <= 500 ) {
       $('.pfad').show().html("<p>Dein Stern</p>");
       console.log('Star is visible in screen');
     }
